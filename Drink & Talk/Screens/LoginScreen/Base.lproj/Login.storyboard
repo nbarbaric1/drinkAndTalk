@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Drink___Talk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XPT-11-k1N">
+                                <rect key="frame" x="122" y="213" width="170" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="PvM-0L-j4G"/>
+                                    <constraint firstAttribute="width" constant="170" id="RpU-t5-q9D"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Daj nadimak ili ime" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-fK-mcS">
+                                <rect key="frame" x="32.5" y="433" width="349" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QvO-tE-RlY"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bES-9q-lhU">
+                                <rect key="frame" x="132" y="531" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HP7-Wo-lUs"/>
+                                    <constraint firstAttribute="width" constant="150" id="mLL-Sn-0kc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PRIJAVI SE">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.67450980390000004" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cVa-fK-mcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fK-RA-r6q"/>
+                            <constraint firstItem="cVa-fK-mcS" firstAttribute="top" secondItem="XPT-11-k1N" secondAttribute="bottom" constant="40" id="Fci-gz-RLg"/>
+                            <constraint firstItem="cVa-fK-mcS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.843" id="GV6-PN-UNb"/>
+                            <constraint firstItem="cVa-fK-mcS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="15" id="NNm-8T-eGS"/>
+                            <constraint firstItem="XPT-11-k1N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c9j-r5-h2W"/>
+                            <constraint firstItem="bES-9q-lhU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mTz-nM-mmO"/>
+                            <constraint firstItem="bES-9q-lhU" firstAttribute="top" secondItem="cVa-fK-mcS" secondAttribute="bottom" constant="38" id="sAQ-zC-f4N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aliasInputTextField" destination="cVa-fK-mcS" id="3dQ-Or-hXt"/>
+                        <outlet property="loginButton" destination="bES-9q-lhU" id="Dbc-1i-t1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="241" height="256"/>
+    </resources>
+</document>

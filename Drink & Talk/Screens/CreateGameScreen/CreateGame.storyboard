@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarutaBlack.ttf">
+            <string>BarutaBlack</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Create Game View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreateGameViewController" id="Y6W-OH-hqX" customClass="CreateGameViewController" customModule="Drink___Talk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="r43-Jz-A53">
+                                <rect key="frame" x="122" y="150" width="170" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="EED-7o-1iP"/>
+                                    <constraint firstAttribute="width" constant="170" id="UDN-fc-7Sc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAT-C5-vKM">
+                                <rect key="frame" x="139" y="390" width="118" height="35"/>
+                                <fontDescription key="fontDescription" name="BarutaBlack" family="Baruta" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALIAS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="340" translatesAutoresizingMaskIntoConstraints="NO" id="wgp-nN-hsd">
+                                <rect key="frame" x="156.5" y="425" width="83" height="35"/>
+                                <fontDescription key="fontDescription" name="BarutaBlack" family="Baruta" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1D-Sf-iuo">
+                                <rect key="frame" x="107" y="516" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4KB-PO-HfN"/>
+                                    <constraint firstAttribute="width" constant="200" id="K5w-Z8-h64"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="KREIRAJ IGRU">
+                                    <fontDescription key="titleFontDescription" name="BarutaBlack" family="Baruta" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createGame" destination="Y6W-OH-hqX" eventType="touchUpInside" id="htp-zY-Jlf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFy-Kq-X6b">
+                                <rect key="frame" x="0.0" y="786" width="414" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="eVo-Z0-NSo"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PRIJAVI SE U POSTOJEĆU EKIPU">
+                                    <fontDescription key="titleFontDescription" name="BarutaBlack" family="Baruta" pointSize="15"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="0.67450980390000004" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EFy-Kq-X6b" secondAttribute="bottom" id="Evs-Lz-MvK"/>
+                            <constraint firstItem="r43-Jz-A53" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="106" id="FeQ-wJ-gPB"/>
+                            <constraint firstItem="wgp-nN-hsd" firstAttribute="top" secondItem="uAT-C5-vKM" secondAttribute="bottom" id="HME-n9-nXP"/>
+                            <constraint firstItem="uAT-C5-vKM" firstAttribute="top" secondItem="r43-Jz-A53" secondAttribute="bottom" constant="60" id="MwW-BK-3Ef"/>
+                            <constraint firstItem="H1D-Sf-iuo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Vm9-L4-DCM"/>
+                            <constraint firstItem="EFy-Kq-X6b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Zdn-54-3Nk"/>
+                            <constraint firstItem="uAT-C5-vKM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-9" id="gFQ-at-oII"/>
+                            <constraint firstItem="r43-Jz-A53" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="m2L-K5-QZB"/>
+                            <constraint firstItem="H1D-Sf-iuo" firstAttribute="top" secondItem="wgp-nN-hsd" secondAttribute="bottom" constant="56" id="mNT-eg-RHV"/>
+                            <constraint firstItem="wgp-nN-hsd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-9" id="qVo-48-r4i"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EFy-Kq-X6b" secondAttribute="trailing" id="tmB-gg-VxY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vrr-3R-Brh"/>
+                    <connections>
+                        <outlet property="loginExistingGame" destination="EFy-Kq-X6b" id="Ecm-RT-pJ3"/>
+                        <outlet property="myAliasLabel" destination="wgp-nN-hsd" id="BI0-8C-MtE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="21.428571428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iwT-nU-2Mr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cOu-L5-r3H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="pencil" catalog="system" id="bs2-Es-2R8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="L1X-4o-FjP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIn-ih-4y2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="21.428571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="241" height="256"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

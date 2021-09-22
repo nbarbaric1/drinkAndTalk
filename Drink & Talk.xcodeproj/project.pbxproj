@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EAE0D8F6BCCDB1FC084D4F5 /* Pods_Drink___Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D658B3A1F3F3643EA3F2D2 /* Pods_Drink___Talk.framework */; };
+		93D4D02326FB47F7009EBE29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D02226FB47F7009EBE29 /* GoogleService-Info.plist */; };
+		93D4D02826FB49C5009EBE29 /* BarutaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D02726FB49C5009EBE29 /* BarutaBlack.ttf */; };
+		93D4D02B26FB8028009EBE29 /* CreateGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D02A26FB8028009EBE29 /* CreateGame.storyboard */; };
+		93D4D02F26FB8044009EBE29 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D02E26FB8044009EBE29 /* CreateGameViewController.swift */; };
+		93D4D03426FB98CA009EBE29 /* NewGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D03326FB98CA009EBE29 /* NewGame.storyboard */; };
+		93D4D03626FB98D7009EBE29 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D03526FB98D7009EBE29 /* NewGameViewController.swift */; };
+		93D4D03926FB9F6A009EBE29 /* ScanQr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D03826FB9F6A009EBE29 /* ScanQr.storyboard */; };
+		93D4D03B26FB9F76009EBE29 /* ScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D03A26FB9F76009EBE29 /* ScanQrViewController.swift */; };
 		93D8C55426FA4B5900D2CC28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C55326FA4B5900D2CC28 /* AppDelegate.swift */; };
 		93D8C55626FA4B5900D2CC28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C55526FA4B5900D2CC28 /* SceneDelegate.swift */; };
 		93D8C55826FA4B5900D2CC28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C55726FA4B5900D2CC28 /* LoginViewController.swift */; };
@@ -19,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93D4D02226FB47F7009EBE29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93D4D02726FB49C5009EBE29 /* BarutaBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BarutaBlack.ttf; sourceTree = "<group>"; };
+		93D4D02A26FB8028009EBE29 /* CreateGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateGame.storyboard; sourceTree = "<group>"; };
+		93D4D02E26FB8044009EBE29 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		93D4D03326FB98CA009EBE29 /* NewGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGame.storyboard; sourceTree = "<group>"; };
+		93D4D03526FB98D7009EBE29 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		93D4D03826FB9F6A009EBE29 /* ScanQr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanQr.storyboard; sourceTree = "<group>"; };
+		93D4D03A26FB9F76009EBE29 /* ScanQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrViewController.swift; sourceTree = "<group>"; };
 		93D8C55026FA4B5900D2CC28 /* Drink & Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink & Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D8C55326FA4B5900D2CC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D8C55526FA4B5900D2CC28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +47,9 @@
 		93D8C56826FA4C6700D2CC28 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		93D8C56E26FA5C2600D2CC28 /* UIView+Modifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Modifications.swift"; sourceTree = "<group>"; };
 		93D8C57026FA5DF700D2CC28 /* UITextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithPadding.swift; sourceTree = "<group>"; };
+		99D658B3A1F3F3643EA3F2D2 /* Pods_Drink___Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Drink___Talk.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AD9331375808D90AC02EC0 /* Pods-Drink & Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drink & Talk.release.xcconfig"; path = "Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk.release.xcconfig"; sourceTree = "<group>"; };
+		EBE9965807D70C5365B9FBE1 /* Pods-Drink & Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drink & Talk.debug.xcconfig"; path = "Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +57,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAE0D8F6BCCDB1FC084D4F5 /* Pods_Drink___Talk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93D4D02426FB4995009EBE29 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93D4D02726FB49C5009EBE29 /* BarutaBlack.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93D4D02926FB8015009EBE29 /* CreateGameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93D4D02A26FB8028009EBE29 /* CreateGame.storyboard */,
+				93D4D02E26FB8044009EBE29 /* CreateGameViewController.swift */,
+			);
+			path = CreateGameScreen;
+			sourceTree = "<group>";
+		};
+		93D4D03226FB98B9009EBE29 /* NewGameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93D4D03326FB98CA009EBE29 /* NewGame.storyboard */,
+				93D4D03526FB98D7009EBE29 /* NewGameViewController.swift */,
+			);
+			path = NewGameScreen;
+			sourceTree = "<group>";
+		};
+		93D4D03726FB9F53009EBE29 /* ScanQrScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93D4D03826FB9F6A009EBE29 /* ScanQr.storyboard */,
+				93D4D03A26FB9F76009EBE29 /* ScanQrViewController.swift */,
+			);
+			path = ScanQrScreen;
+			sourceTree = "<group>";
+		};
 		93D8C54726FA4B5900D2CC28 = {
 			isa = PBXGroup;
 			children = (
 				93D8C55226FA4B5900D2CC28 /* Drink & Talk */,
 				93D8C55126FA4B5900D2CC28 /* Products */,
+				BEF0929E21975CE72482D09E /* Pods */,
+				F7994A14FDD4CFF2FCD916A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +120,7 @@
 		93D8C55226FA4B5900D2CC28 /* Drink & Talk */ = {
 			isa = PBXGroup;
 			children = (
+				93D4D02426FB4995009EBE29 /* Fonts */,
 				93D8C56A26FA4F4400D2CC28 /* Screens */,
 				93D8C55C26FA4B5B00D2CC28 /* Assets.xcassets */,
 				93D8C56B26FA507C00D2CC28 /* SupportingFiles */,
@@ -83,6 +142,9 @@
 		93D8C56A26FA4F4400D2CC28 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				93D4D03726FB9F53009EBE29 /* ScanQrScreen */,
+				93D4D03226FB98B9009EBE29 /* NewGameScreen */,
+				93D4D02926FB8015009EBE29 /* CreateGameScreen */,
 				93D8C56D26FA50D400D2CC28 /* LoginScreen */,
 				93D8C56C26FA50BE00D2CC28 /* LaunchScreen */,
 			);
@@ -94,6 +156,7 @@
 			children = (
 				93D8C55326FA4B5900D2CC28 /* AppDelegate.swift */,
 				93D8C55526FA4B5900D2CC28 /* SceneDelegate.swift */,
+				93D4D02226FB47F7009EBE29 /* GoogleService-Info.plist */,
 				93D8C56126FA4B5B00D2CC28 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -116,6 +179,23 @@
 			path = LoginScreen;
 			sourceTree = "<group>";
 		};
+		BEF0929E21975CE72482D09E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9965807D70C5365B9FBE1 /* Pods-Drink & Talk.debug.xcconfig */,
+				B7AD9331375808D90AC02EC0 /* Pods-Drink & Talk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7994A14FDD4CFF2FCD916A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99D658B3A1F3F3643EA3F2D2 /* Pods_Drink___Talk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93D8C56426FA4B5B00D2CC28 /* Build configuration list for PBXNativeTarget "Drink & Talk" */;
 			buildPhases = (
+				113EACF33DE6CB1E2078E8D2 /* [CP] Check Pods Manifest.lock */,
 				93D8C54C26FA4B5900D2CC28 /* Sources */,
 				93D8C54D26FA4B5900D2CC28 /* Frameworks */,
 				93D8C54E26FA4B5900D2CC28 /* Resources */,
+				D077926F779E1E27E5783F0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,24 +256,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D4D03926FB9F6A009EBE29 /* ScanQr.storyboard in Resources */,
+				93D4D03426FB98CA009EBE29 /* NewGame.storyboard in Resources */,
 				93D8C56026FA4B5B00D2CC28 /* LaunchScreen.storyboard in Resources */,
+				93D4D02326FB47F7009EBE29 /* GoogleService-Info.plist in Resources */,
 				93D8C55D26FA4B5B00D2CC28 /* Assets.xcassets in Resources */,
 				93D8C55B26FA4B5900D2CC28 /* Login.storyboard in Resources */,
+				93D4D02B26FB8028009EBE29 /* CreateGame.storyboard in Resources */,
+				93D4D02826FB49C5009EBE29 /* BarutaBlack.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113EACF33DE6CB1E2078E8D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drink & Talk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D077926F779E1E27E5783F0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93D8C54C26FA4B5900D2CC28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D4D02F26FB8044009EBE29 /* CreateGameViewController.swift in Sources */,
+				93D4D03626FB98D7009EBE29 /* NewGameViewController.swift in Sources */,
 				93D8C55826FA4B5900D2CC28 /* LoginViewController.swift in Sources */,
 				93D8C56926FA4C6700D2CC28 /* UIColor+AppColors.swift in Sources */,
 				93D8C55426FA4B5900D2CC28 /* AppDelegate.swift in Sources */,
 				93D8C57126FA5DF800D2CC28 /* UITextFieldWithPadding.swift in Sources */,
 				93D8C56F26FA5C2600D2CC28 /* UIView+Modifications.swift in Sources */,
+				93D4D03B26FB9F76009EBE29 /* ScanQrViewController.swift in Sources */,
 				93D8C55626FA4B5900D2CC28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +468,7 @@
 		};
 		93D8C56526FA4B5B00D2CC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE9965807D70C5365B9FBE1 /* Pods-Drink & Talk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +498,7 @@
 		};
 		93D8C56626FA4B5B00D2CC28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AD9331375808D90AC02EC0 /* Pods-Drink & Talk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

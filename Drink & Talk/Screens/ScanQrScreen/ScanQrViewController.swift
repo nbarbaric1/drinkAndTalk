@@ -4,6 +4,7 @@ import UIKit
 class ScanQrViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
+    var myAlias: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +86,12 @@ class ScanQrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 
     func found(code: String) {
         print(code)
+        let nextScreen = "WaitingLobby"
+        let storyboard = UIStoryboard(name: nextScreen, bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: String( nextScreen + "ViewController")) as! WaitingLobbyViewController
+        nextViewController.gameId = code
+        nextViewController.myAlias = myAlias
+        navigationController?.pushViewController(nextViewController, animated: true)
     }
 
     override var prefersStatusBarHidden: Bool {

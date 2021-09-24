@@ -13,6 +13,12 @@ extension UIView {
         self.clipsToBounds = true
     }
     
+    func makeRoundedTopCorners(withCornerRadius radius: Double){
+        self.layer.cornerRadius = CGFloat(radius)
+        self.clipsToBounds = true
+        self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    }
+    
     func shake() {
         self.transform = CGAffineTransform(translationX: -2, y: 0)
         UIView.animate(withDuration: 0.2, delay: 0, options: [.autoreverse]) {

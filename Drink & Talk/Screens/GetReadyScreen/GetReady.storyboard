@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarutaBlack.ttf">
+            <string>BarutaBlack</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Get Ready View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GetReadyViewController" id="Y6W-OH-hqX" customClass="GetReadyViewController" customModule="Drink___Talk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle Copy 2" translatesAutoresizingMaskIntoConstraints="NO" id="DJM-bg-aEt">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4TL-QU-Y1a"/>
+                                    <constraint firstAttribute="width" constant="200" id="K25-tZ-nel"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsI-m6-FF2">
+                                <rect key="frame" x="151" y="388" width="112.5" height="120"/>
+                                <fontDescription key="fontDescription" name="BarutaBlack" family="Baruta" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPUSTI I NE DIRAJ  MOBITEL ZA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id0-fX-oZy">
+                                <rect key="frame" x="143.5" y="292" width="127.5" height="36"/>
+                                <fontDescription key="fontDescription" name="BarutaBlack" family="Baruta" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEKUNDI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg6-Io-BXr">
+                                <rect key="frame" x="177" y="572" width="60.5" height="18"/>
+                                <fontDescription key="fontDescription" name="BarutaBlack" family="Baruta" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2x-il-9g0">
+                                <rect key="frame" x="72" y="719" width="270" height="125"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ukoliko podigneš mobitel u sljedećih  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="1 sat 30 min">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="Futura-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">  ostalim sudionicima igre doći će  notifikacija da si izgubio. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Budi fer i plati piće ako gubiš.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="Futura-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="0.67450980390000004" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bsI-m6-FF2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="1t2-Hi-HGk"/>
+                            <constraint firstItem="gg6-Io-BXr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Ces-AW-rBb"/>
+                            <constraint firstItem="DJM-bg-aEt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DG2-jA-bbT"/>
+                            <constraint firstItem="DJM-bg-aEt" firstAttribute="top" secondItem="id0-fX-oZy" secondAttribute="bottom" constant="20" id="L0Q-nt-CS6"/>
+                            <constraint firstItem="bsI-m6-FF2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Sh0-w7-Iby"/>
+                            <constraint firstItem="F2x-il-9g0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="aIX-9h-2Jp"/>
+                            <constraint firstItem="id0-fX-oZy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="njb-1T-I8W"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="F2x-il-9g0" secondAttribute="bottom" constant="18" id="nlb-jh-UEB"/>
+                            <constraint firstItem="DJM-bg-aEt" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="rzA-Bi-QWH"/>
+                            <constraint firstItem="gg6-Io-BXr" firstAttribute="top" secondItem="DJM-bg-aEt" secondAttribute="bottom" constant="24" id="uwO-4H-ekO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="F2x-il-9g0" id="ksx-RU-uQo"/>
+                        <outlet property="timerLabel" destination="bsI-m6-FF2" id="Jo7-bg-Cx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="22"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle Copy 2" width="208" height="208"/>
+    </resources>
+</document>

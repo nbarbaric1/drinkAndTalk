@@ -6,22 +6,16 @@
 //
 
 import UIKit
-import Firebase
 
 class LoginViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var aliasInputTextField: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
-
-    // MARK: - Properties
-    
-    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        configureFirebase()
     }
 }
 
@@ -34,18 +28,7 @@ private extension LoginViewController {
         let barutaFont = UIFont(name: "BarutaBlack", size: UIFont.buttonFontSize) ?? UIFont.systemFont(ofSize: UIFont.buttonFontSize)
         loginButton.titleLabel?.font = UIFontMetrics.default.scaledFont(for: barutaFont)
         loginButton.titleLabel?.adjustsFontForContentSizeCategory = true
-    }
-    
-    func configureFirebase(){
-        ref = Database.database().reference()
-        ref.child("courses").setValue(["igra" : "a ona igra"]){
-            (error:Error?, ref:DatabaseReference) in
-            if let error = error {
-                print("Data could not be saved: \(error).")
-            } else {
-                print("Data saved successfully!")
-            }
-        }
+        hideKeyboardWhenTappedAround()
     }
 }
 
@@ -70,7 +53,7 @@ extension LoginViewController {
         let storyboard = UIStoryboard(name: nextScreen, bundle: nil)
         let nextViewController = storyboard
             .instantiateViewController(withIdentifier: String(nextScreen + "ViewController")) as! CreateGameViewController
-        nextViewController.myAlias = aliasInputTextField.text
+        nextViewController.myAlias = aliasInputTextField.text?.uppercased()
         navigationController?.pushViewController(nextViewController, animated: true)
     }
 }

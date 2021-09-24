@@ -8,11 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1EAE0D8F6BCCDB1FC084D4F5 /* Pods_Drink___Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D658B3A1F3F3643EA3F2D2 /* Pods_Drink___Talk.framework */; };
+		9300CFD226FBE05200C7D4B5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFD126FBE05200C7D4B5 /* Player.swift */; };
+		9300CFD526FBEF3A00C7D4B5 /* Squad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFD426FBEF3A00C7D4B5 /* Squad.storyboard */; };
+		9300CFD726FBEF4E00C7D4B5 /* SquadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFD626FBEF4E00C7D4B5 /* SquadViewController.swift */; };
+		9300CFD926FBF77C00C7D4B5 /* UIViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFD826FBF77C00C7D4B5 /* UIViewController+KeyboardHandling.swift */; };
+		9300CFDC26FCC07B00C7D4B5 /* WaitingLobby.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFDB26FCC07B00C7D4B5 /* WaitingLobby.storyboard */; };
+		9300CFDE26FCC08700C7D4B5 /* WaitingLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFDD26FCC08700C7D4B5 /* WaitingLobbyViewController.swift */; };
+		9300CFE026FCC79B00C7D4B5 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFDF26FCC79B00C7D4B5 /* PlayerTableViewCell.swift */; };
+		9300CFE226FCE6EC00C7D4B5 /* NewGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFE126FCE6EC00C7D4B5 /* NewGame.storyboard */; };
+		9300CFE426FD3FBE00C7D4B5 /* Administrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFE326FD3FBE00C7D4B5 /* Administrator.swift */; };
+		9300CFE926FDEA8800C7D4B5 /* GetReady.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFE826FDEA8800C7D4B5 /* GetReady.storyboard */; };
+		9300CFEB26FDEAA200C7D4B5 /* GetReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFEA26FDEAA200C7D4B5 /* GetReadyViewController.swift */; };
+		9300CFEE26FDF5AF00C7D4B5 /* Playing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFED26FDF5AF00C7D4B5 /* Playing.storyboard */; };
+		9300CFF026FDF5BB00C7D4B5 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFEF26FDF5BB00C7D4B5 /* PlayingViewController.swift */; };
+		9300CFF326FDF85800C7D4B5 /* Loser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFF226FDF85800C7D4B5 /* Loser.storyboard */; };
+		9300CFF526FDF86300C7D4B5 /* LoserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFF426FDF86300C7D4B5 /* LoserViewController.swift */; };
+		9300CFF726FE01E800C7D4B5 /* Success.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9300CFF626FE01E800C7D4B5 /* Success.storyboard */; };
+		9300CFFA26FE022200C7D4B5 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9300CFF926FE022200C7D4B5 /* SuccessViewController.swift */; };
 		93D4D02326FB47F7009EBE29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D02226FB47F7009EBE29 /* GoogleService-Info.plist */; };
 		93D4D02826FB49C5009EBE29 /* BarutaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D02726FB49C5009EBE29 /* BarutaBlack.ttf */; };
 		93D4D02B26FB8028009EBE29 /* CreateGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D02A26FB8028009EBE29 /* CreateGame.storyboard */; };
 		93D4D02F26FB8044009EBE29 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D02E26FB8044009EBE29 /* CreateGameViewController.swift */; };
-		93D4D03426FB98CA009EBE29 /* NewGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D03326FB98CA009EBE29 /* NewGame.storyboard */; };
 		93D4D03626FB98D7009EBE29 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D03526FB98D7009EBE29 /* NewGameViewController.swift */; };
 		93D4D03926FB9F6A009EBE29 /* ScanQr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D4D03826FB9F6A009EBE29 /* ScanQr.storyboard */; };
 		93D4D03B26FB9F76009EBE29 /* ScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D03A26FB9F76009EBE29 /* ScanQrViewController.swift */; };
@@ -24,15 +40,31 @@
 		93D8C56026FA4B5B00D2CC28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D8C55E26FA4B5B00D2CC28 /* LaunchScreen.storyboard */; };
 		93D8C56926FA4C6700D2CC28 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C56826FA4C6700D2CC28 /* UIColor+AppColors.swift */; };
 		93D8C56F26FA5C2600D2CC28 /* UIView+Modifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C56E26FA5C2600D2CC28 /* UIView+Modifications.swift */; };
-		93D8C57126FA5DF800D2CC28 /* UITextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C57026FA5DF700D2CC28 /* UITextFieldWithPadding.swift */; };
+		93D8C57126FA5DF800D2CC28 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D8C57026FA5DF700D2CC28 /* UITextField+Padding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9300CFD126FBE05200C7D4B5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9300CFD426FBEF3A00C7D4B5 /* Squad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Squad.storyboard; sourceTree = "<group>"; };
+		9300CFD626FBEF4E00C7D4B5 /* SquadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadViewController.swift; sourceTree = "<group>"; };
+		9300CFD826FBF77C00C7D4B5 /* UIViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
+		9300CFDB26FCC07B00C7D4B5 /* WaitingLobby.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaitingLobby.storyboard; sourceTree = "<group>"; };
+		9300CFDD26FCC08700C7D4B5 /* WaitingLobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingLobbyViewController.swift; sourceTree = "<group>"; };
+		9300CFDF26FCC79B00C7D4B5 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		9300CFE126FCE6EC00C7D4B5 /* NewGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewGame.storyboard; sourceTree = "<group>"; };
+		9300CFE326FD3FBE00C7D4B5 /* Administrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
+		9300CFE826FDEA8800C7D4B5 /* GetReady.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetReady.storyboard; sourceTree = "<group>"; };
+		9300CFEA26FDEAA200C7D4B5 /* GetReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReadyViewController.swift; sourceTree = "<group>"; };
+		9300CFED26FDF5AF00C7D4B5 /* Playing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playing.storyboard; sourceTree = "<group>"; };
+		9300CFEF26FDF5BB00C7D4B5 /* PlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
+		9300CFF226FDF85800C7D4B5 /* Loser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loser.storyboard; sourceTree = "<group>"; };
+		9300CFF426FDF86300C7D4B5 /* LoserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoserViewController.swift; sourceTree = "<group>"; };
+		9300CFF626FE01E800C7D4B5 /* Success.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Success.storyboard; sourceTree = "<group>"; };
+		9300CFF926FE022200C7D4B5 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		93D4D02226FB47F7009EBE29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93D4D02726FB49C5009EBE29 /* BarutaBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BarutaBlack.ttf; sourceTree = "<group>"; };
 		93D4D02A26FB8028009EBE29 /* CreateGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateGame.storyboard; sourceTree = "<group>"; };
 		93D4D02E26FB8044009EBE29 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
-		93D4D03326FB98CA009EBE29 /* NewGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGame.storyboard; sourceTree = "<group>"; };
 		93D4D03526FB98D7009EBE29 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 		93D4D03826FB9F6A009EBE29 /* ScanQr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanQr.storyboard; sourceTree = "<group>"; };
 		93D4D03A26FB9F76009EBE29 /* ScanQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +78,7 @@
 		93D8C56126FA4B5B00D2CC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Drink & Talk/SupportingFiles/Info.plist"; sourceTree = SOURCE_ROOT; };
 		93D8C56826FA4C6700D2CC28 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		93D8C56E26FA5C2600D2CC28 /* UIView+Modifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Modifications.swift"; sourceTree = "<group>"; };
-		93D8C57026FA5DF700D2CC28 /* UITextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithPadding.swift; sourceTree = "<group>"; };
+		93D8C57026FA5DF700D2CC28 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		99D658B3A1F3F3643EA3F2D2 /* Pods_Drink___Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Drink___Talk.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AD9331375808D90AC02EC0 /* Pods-Drink & Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drink & Talk.release.xcconfig"; path = "Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk.release.xcconfig"; sourceTree = "<group>"; };
 		EBE9965807D70C5365B9FBE1 /* Pods-Drink & Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drink & Talk.debug.xcconfig"; path = "Target Support Files/Pods-Drink & Talk/Pods-Drink & Talk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +96,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9300CFCF26FBDFF800C7D4B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFD026FBE00200C7D4B5 /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9300CFD026FBE00200C7D4B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFD126FBE05200C7D4B5 /* Player.swift */,
+				9300CFE326FD3FBE00C7D4B5 /* Administrator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9300CFD326FBEF2900C7D4B5 /* SquadScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFD426FBEF3A00C7D4B5 /* Squad.storyboard */,
+				9300CFD626FBEF4E00C7D4B5 /* SquadViewController.swift */,
+			);
+			path = SquadScreen;
+			sourceTree = "<group>";
+		};
+		9300CFDA26FCBFB800C7D4B5 /* WaitingLobbyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFDB26FCC07B00C7D4B5 /* WaitingLobby.storyboard */,
+				9300CFDD26FCC08700C7D4B5 /* WaitingLobbyViewController.swift */,
+			);
+			path = WaitingLobbyScreen;
+			sourceTree = "<group>";
+		};
+		9300CFE526FDB7FF00C7D4B5 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFDF26FCC79B00C7D4B5 /* PlayerTableViewCell.swift */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		9300CFE626FDEA1E00C7D4B5 /* GetReadyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFE826FDEA8800C7D4B5 /* GetReady.storyboard */,
+				9300CFEA26FDEAA200C7D4B5 /* GetReadyViewController.swift */,
+			);
+			path = GetReadyScreen;
+			sourceTree = "<group>";
+		};
+		9300CFEC26FDF59B00C7D4B5 /* PlayingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFED26FDF5AF00C7D4B5 /* Playing.storyboard */,
+				9300CFEF26FDF5BB00C7D4B5 /* PlayingViewController.swift */,
+			);
+			path = PlayingScreen;
+			sourceTree = "<group>";
+		};
+		9300CFF126FDF83800C7D4B5 /* LoserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFF226FDF85800C7D4B5 /* Loser.storyboard */,
+				9300CFF426FDF86300C7D4B5 /* LoserViewController.swift */,
+			);
+			path = LoserScreen;
+			sourceTree = "<group>";
+		};
+		9300CFF826FE01FC00C7D4B5 /* SuccessScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9300CFF626FE01E800C7D4B5 /* Success.storyboard */,
+				9300CFF926FE022200C7D4B5 /* SuccessViewController.swift */,
+			);
+			path = SuccessScreen;
+			sourceTree = "<group>";
+		};
 		93D4D02426FB4995009EBE29 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +195,7 @@
 		93D4D03226FB98B9009EBE29 /* NewGameScreen */ = {
 			isa = PBXGroup;
 			children = (
-				93D4D03326FB98CA009EBE29 /* NewGame.storyboard */,
+				9300CFE126FCE6EC00C7D4B5 /* NewGame.storyboard */,
 				93D4D03526FB98D7009EBE29 /* NewGameViewController.swift */,
 			);
 			path = NewGameScreen;
@@ -120,6 +231,7 @@
 		93D8C55226FA4B5900D2CC28 /* Drink & Talk */ = {
 			isa = PBXGroup;
 			children = (
+				9300CFCF26FBDFF800C7D4B5 /* Networking */,
 				93D4D02426FB4995009EBE29 /* Fonts */,
 				93D8C56A26FA4F4400D2CC28 /* Screens */,
 				93D8C55C26FA4B5B00D2CC28 /* Assets.xcassets */,
@@ -134,7 +246,8 @@
 			children = (
 				93D8C56826FA4C6700D2CC28 /* UIColor+AppColors.swift */,
 				93D8C56E26FA5C2600D2CC28 /* UIView+Modifications.swift */,
-				93D8C57026FA5DF700D2CC28 /* UITextFieldWithPadding.swift */,
+				93D8C57026FA5DF700D2CC28 /* UITextField+Padding.swift */,
+				9300CFD826FBF77C00C7D4B5 /* UIViewController+KeyboardHandling.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,6 +255,13 @@
 		93D8C56A26FA4F4400D2CC28 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9300CFF826FE01FC00C7D4B5 /* SuccessScreen */,
+				9300CFF126FDF83800C7D4B5 /* LoserScreen */,
+				9300CFEC26FDF59B00C7D4B5 /* PlayingScreen */,
+				9300CFE626FDEA1E00C7D4B5 /* GetReadyScreen */,
+				9300CFE526FDB7FF00C7D4B5 /* UITableViewCells */,
+				9300CFDA26FCBFB800C7D4B5 /* WaitingLobbyScreen */,
+				9300CFD326FBEF2900C7D4B5 /* SquadScreen */,
 				93D4D03726FB9F53009EBE29 /* ScanQrScreen */,
 				93D4D03226FB98B9009EBE29 /* NewGameScreen */,
 				93D4D02926FB8015009EBE29 /* CreateGameScreen */,
@@ -256,12 +376,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9300CFD526FBEF3A00C7D4B5 /* Squad.storyboard in Resources */,
 				93D4D03926FB9F6A009EBE29 /* ScanQr.storyboard in Resources */,
-				93D4D03426FB98CA009EBE29 /* NewGame.storyboard in Resources */,
 				93D8C56026FA4B5B00D2CC28 /* LaunchScreen.storyboard in Resources */,
+				9300CFE226FCE6EC00C7D4B5 /* NewGame.storyboard in Resources */,
+				9300CFF326FDF85800C7D4B5 /* Loser.storyboard in Resources */,
 				93D4D02326FB47F7009EBE29 /* GoogleService-Info.plist in Resources */,
+				9300CFF726FE01E800C7D4B5 /* Success.storyboard in Resources */,
 				93D8C55D26FA4B5B00D2CC28 /* Assets.xcassets in Resources */,
 				93D8C55B26FA4B5900D2CC28 /* Login.storyboard in Resources */,
+				9300CFE926FDEA8800C7D4B5 /* GetReady.storyboard in Resources */,
+				9300CFDC26FCC07B00C7D4B5 /* WaitingLobby.storyboard in Resources */,
+				9300CFEE26FDF5AF00C7D4B5 /* Playing.storyboard in Resources */,
 				93D4D02B26FB8028009EBE29 /* CreateGame.storyboard in Resources */,
 				93D4D02826FB49C5009EBE29 /* BarutaBlack.ttf in Resources */,
 			);
@@ -316,14 +442,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9300CFF526FDF86300C7D4B5 /* LoserViewController.swift in Sources */,
+				9300CFE026FCC79B00C7D4B5 /* PlayerTableViewCell.swift in Sources */,
+				9300CFD926FBF77C00C7D4B5 /* UIViewController+KeyboardHandling.swift in Sources */,
+				9300CFDE26FCC08700C7D4B5 /* WaitingLobbyViewController.swift in Sources */,
 				93D4D02F26FB8044009EBE29 /* CreateGameViewController.swift in Sources */,
 				93D4D03626FB98D7009EBE29 /* NewGameViewController.swift in Sources */,
 				93D8C55826FA4B5900D2CC28 /* LoginViewController.swift in Sources */,
 				93D8C56926FA4C6700D2CC28 /* UIColor+AppColors.swift in Sources */,
 				93D8C55426FA4B5900D2CC28 /* AppDelegate.swift in Sources */,
-				93D8C57126FA5DF800D2CC28 /* UITextFieldWithPadding.swift in Sources */,
+				93D8C57126FA5DF800D2CC28 /* UITextField+Padding.swift in Sources */,
+				9300CFE426FD3FBE00C7D4B5 /* Administrator.swift in Sources */,
 				93D8C56F26FA5C2600D2CC28 /* UIView+Modifications.swift in Sources */,
+				9300CFEB26FDEAA200C7D4B5 /* GetReadyViewController.swift in Sources */,
 				93D4D03B26FB9F76009EBE29 /* ScanQrViewController.swift in Sources */,
+				9300CFFA26FE022200C7D4B5 /* SuccessViewController.swift in Sources */,
+				9300CFD226FBE05200C7D4B5 /* Player.swift in Sources */,
+				9300CFD726FBEF4E00C7D4B5 /* SquadViewController.swift in Sources */,
+				9300CFF026FDF5BB00C7D4B5 /* PlayingViewController.swift in Sources */,
 				93D8C55626FA4B5900D2CC28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

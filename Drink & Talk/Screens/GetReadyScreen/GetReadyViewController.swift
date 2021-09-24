@@ -18,7 +18,7 @@ class GetReadyViewController: UIViewController {
     private var ref: DatabaseReference!
     var gameId: String?
     var myAlias: String?
-    var secondsToWait = 3
+    var secondsToWait = 10
     var duration: Int?
 
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class GetReadyViewController: UIViewController {
         getDuration()
     }
 }
-
+// MARK: - Functions
 extension GetReadyViewController {
     func configureFirebase(){
         ref = Database.database().reference()

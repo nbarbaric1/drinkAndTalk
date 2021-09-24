@@ -9,10 +9,12 @@ import UIKit
 
 class LoserViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet private weak var newGameButton: UIButton!
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var loserLabel: UILabel!
     
+    // MARK: - Properties
     var loserAlias: String?
     
     override func viewDidLoad() {
@@ -24,6 +26,7 @@ class LoserViewController: UIViewController {
     }
 }
 
+// MARK: - Functions
 private extension LoserViewController {
     func configureUI() {
         newGameButton.makeRoundedTopCorners(withCornerRadius: 55)
@@ -39,6 +42,7 @@ private extension LoserViewController {
     }
 }
 
+// MARK: - IBActions
 extension LoserViewController {
     @IBAction func newGameButtonActionHandler() {
         navigateToLoginScreen()

@@ -11,6 +11,7 @@ import CoreMotion
 
 class PlayingViewController: UIViewController {
 
+    // MARK: - Properties
     var ref: DatabaseReference!
     var gameId: String?
     var myAlias: String?
@@ -23,17 +24,31 @@ class PlayingViewController: UIViewController {
         configureFirebase()
         waitForLoser()
         
+        let notificationCenter = NotificationCenter.default
+            notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
+            
+            notificationCenter.addObserver(self, selector: #selector(appCameToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        
         Timer.scheduledTimer(withTimeInterval: Double(duration), repeats: false) { _ in
             self.navigateToSuccessScreen()
         }
     }
-    
+
     override var prefersStatusBarHidden: Bool {
         true
     }
 
     override var prefersHomeIndicatorAutoHidden: Bool {
         true
+    }
+
+    @objc func appMovedToBackground() {
+       print("app enters background")
+       iAmLoser()
+    }
+
+    @objc func appCameToForeground() {
+       print("app enters foreground")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -48,22 +63,8 @@ class PlayingViewController: UIViewController {
     }
 }
 
+// MARK: - Functions
 private extension PlayingViewController {
-    
-    func monitoringMeForMovement(){
-        let manager = CMMotionManager()
-        
-        manager.startAccelerometerUpdates()
-        manager.accelerometerUpdateInterval = 1
-        
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            guard let data = manager.accelerometerData else { return }
-            
-            print(data.acceleration.x)
-            print(data.acceleration.y)
-            print(data.acceleration.z)
-        }
-    }
     
     func iAmLoser(){
         guard let gameId = gameId,

@@ -37,13 +37,14 @@ class WaitingLobbyViewController: UIViewController {
         waitForStart()
     }
 }
-
+// MARK: - IBActions
 extension WaitingLobbyViewController {
     @IBAction func exitGameButtonActionHandler(){
         navigateToLoginScreen()
     }
 }
 
+// MARK: - Functions
 private extension WaitingLobbyViewController {
     
     func waitForStart(){
@@ -82,20 +83,15 @@ private extension WaitingLobbyViewController {
         navigationController?.setViewControllers([nextViewController], animated: true)
     }
     
-    
-    
     func addPlayer(){
         guard let gameId = gameId,
               let myAlias = myAlias
         else { return }
         
-        
-        
         let playerRandomId: String? = ref.child("games").child(gameId).child("players").childByAutoId().key
         guard let playerRandomId = playerRandomId else { return }
         
         let playerId = "player" + playerRandomId
-        
         
         ref.child("games").child(gameId).child("players").child(playerId).setValue(["alias" : myAlias]){
             (error:Error?, ref:DatabaseReference) in
@@ -105,7 +101,6 @@ private extension WaitingLobbyViewController {
                 self.isPlayerSaved = true
             }
         }
-        
     }
     
     func getPlayers(){
@@ -125,7 +120,7 @@ private extension WaitingLobbyViewController {
         }
     }
 }
-
+// MARK: - TableView Delegate
 extension WaitingLobbyViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

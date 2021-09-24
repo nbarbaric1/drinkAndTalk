@@ -9,6 +9,7 @@ import UIKit
 
 class SuccessViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var newGameButton: UIButton!
 
@@ -18,6 +19,7 @@ class SuccessViewController: UIViewController {
     }
 }
 
+// MARK: - Functions
 private extension SuccessViewController {
     func configureUI() {
         containerView.makeRounded(withCornerRadius: 55)
@@ -32,6 +34,7 @@ private extension SuccessViewController {
     }
 }
 
+// MARK: - IBActions
 extension SuccessViewController {
     @IBAction func newGameButtonActionHandler() {
         navigateToLoginScreen()
